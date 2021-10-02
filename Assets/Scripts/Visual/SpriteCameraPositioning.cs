@@ -8,6 +8,30 @@ public class SpriteCameraPositioning : MonoBehaviour
     [SerializeField]
     float scaleFactor,maxDist, optimalDist;
     Vector3 normalScale;
+    // If no rotates X and Y
+    [SerializeField]
+    private bool isRotateOnlyY;
+    // If no sprite look at camera
+    [SerializeField]
+    private bool isLookAtPlayer;
+
+    private GameObject player;
+    public GameObject Player 
+    { 
+        get 
+        { 
+            return player; 
+        } 
+    }
+    private float distanceToTarget;
+    public float DistanceToTarget
+    {
+        get
+        {
+            return distanceToTarget;
+        }
+    }
+
 
     private void Awake()
     {
@@ -18,14 +42,29 @@ public class SpriteCameraPositioning : MonoBehaviour
     {
         if (camera == null)
             camera = Camera.main.transform;
-
+        player = PlayerController.Instance.gameObject;
     }
 
     void Update()
     {
-        float dist = Vector3.Distance(transform.position, camera.position);
+        GameObject targetObject = camera.gameObject;
+        if (isLookAtPlayer)
+        {
+            targetObject = player;
+        }
 
-        transform.LookAt(camera);
-        transform.localScale = normalScale * Mathf.Clamp01((maxDist - dist) / maxDist);
+        distanceToTarget = Vector3.Distance(transform.position, targetObject.transform.position);
+
+        Vector3 targetPostition = targetObject.transform.position;
+
+        if (isRotateOnlyY)
+        {
+            targetPostition = new Vector3(targetObject.transform.position.x,
+                                          this.transform.position.y,
+                                          targetObject.transform.position.z);
+        }
+
+        transform.LookAt(targetPostition);
+        transform.localScale = normalScale * Mathf.Clamp01((maxDist - distanceToTarget) / maxDist);
     }
 }
