@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float speed, runningSpeed;
@@ -9,6 +10,8 @@ public class PlayerController : MonoBehaviour
     // Singletone pattern
     private static PlayerController instance;
     public static PlayerController Instance { get { return instance; } }
+    private Vector3 velocity;
+    Rigidbody rb;
 
     private void Awake()
     {
@@ -22,10 +25,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody>();
+    }
+
     void Update()
     {
         // Get Input
-        Vector3 vel = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")) * (Input.GetKey(KeyCode.LeftShift) ? runningSpeed : speed);
-        transform.Translate(vel * Time.deltaTime);
+        velocity = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")) * (Input.GetKey(KeyCode.LeftShift) ? runningSpeed : speed);
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = velocity;
     }
 }

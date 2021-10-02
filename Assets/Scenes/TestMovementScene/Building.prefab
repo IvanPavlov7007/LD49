@@ -91,6 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8788493647146611963}
   - component: {fileID: 4501000084838274560}
+  - component: {fileID: 8071048355989403182}
   m_Layer: 0
   m_Name: Building
   m_TagString: Untagged
@@ -128,3 +129,22 @@ MonoBehaviour:
   scaleFactor: 0
   maxDist: 100
   optimalDist: 10
+  isRotateOnlyY: 0
+  isLookAtPlayer: 0
+--- !u!114 &8071048355989403182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5277483585643662641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c28dffa6be1034db152576122e5d02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SCP: {fileID: 4501000084838274560}
+  spriteRenderer: {fileID: 1495744959212679813}
+  isFadeOutWhenClose: 1
+  fadeOutRange: {x: 1, y: 0}
+  fadeOutDistance: {x: 6, y: 3}

@@ -64,7 +64,7 @@ public class SpriteCameraPositioning : MonoBehaviour
                                           targetObject.transform.position.z);
         }
 
-        transform.LookAt(targetPostition);
+        //transform.LookAt(targetPostition);
         transform.localScale = normalScale * Mathf.Clamp01((maxDist - distanceToTarget) / maxDist);
     }
 }
