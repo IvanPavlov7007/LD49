@@ -41,8 +41,7 @@ public class EnvironmentObject : MonoBehaviour
         }
         else
         {
-            Debug.Log(fadeOutDistance.y / distance);
-            newAlpha = Mathf.Lerp(fadeOutRange.x, fadeOutRange.y, fadeOutDistance.y / distance);
+            newAlpha = Mathf.Lerp(fadeOutRange.y, fadeOutRange.x, (distance - fadeOutDistance.y) / fadeOutDistance.y);
         }
 
         spriteRenderer.color = new Color(spriteRenderer.color.r,
