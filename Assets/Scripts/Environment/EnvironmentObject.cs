@@ -7,6 +7,14 @@ public class EnvironmentObject : MonoBehaviour
     public SpriteCameraPositioning SCP;
     [SerializeField]
     private SpriteRenderer spriteRenderer;
+    public SpriteRenderer SpriteRenderer
+    {
+        get
+        {
+            return spriteRenderer;
+        }
+    }
+
     [SerializeField]
     private bool isFadeOutWhenClose;
     [SerializeField]
@@ -14,20 +22,92 @@ public class EnvironmentObject : MonoBehaviour
     [SerializeField] 
     private Vector2 fadeOutDistance;
 
+    [SerializeField]
+    private bool isFakeObject;
+    [SerializeField]
+    private Vector2 activationRange; // x - max dist, y - min dist (50 - 0)
+    [SerializeField]
+    private bool isRandomPrefab;
+    [SerializeField]
+    private GameObject objectPrefab;
+    [SerializeField]
+    private List<GameObject> similarPrefabs;
+    private EnvironmentObject realObjectEnv;
+    private bool isMimicActivated = false;
+    public bool IsMimicActivated 
+    {
+        set
+        {
+            isMimicActivated = value;            
+        }
+    }
+
+
     protected void Awake()
     {
-        
+        if (isFakeObject && !isMimicActivated)
+        {
+            if (isRandomPrefab)
+            {
+                objectPrefab = similarPrefabs[Random.Range(0, similarPrefabs.Count)];
+            }
+            GameObject realObject = Instantiate(objectPrefab, this.transform.position, Quaternion.identity);
+
+            realObject.transform.parent = this.transform;
+            realObjectEnv = realObject.GetComponent<EnvironmentObject>();
+            realObjectEnv.isMimicActivated = true;
+            realObjectEnv.SpriteRenderer.color = GetColorWithChangedAlpha(realObjectEnv.SpriteRenderer.color, 0f);
+            realObject.SetActive(false);
+        }
     }
 
     protected void Update()
     {
         if (isFadeOutWhenClose)
         {
-            ChangeAlpha(SCP.DistanceToTarget);
+            FadeOutCloseAlpha(SCP.DistanceToTarget);
+        }
+
+        if (isFakeObject && !isMimicActivated)
+        {
+            if (SCP.DistanceToTarget != 0)
+            {
+                CheckMimicActivate(SCP.DistanceToTarget, PlayerController.Instance.MadnessFactor);
+            }
         }
     }
 
-    private void ChangeAlpha(float distance)
+    private void CheckMimicActivate(float distance, float madnessFactor)
+    {
+        float activationDistance = Mathf.Lerp(activationRange.x, activationRange.y, madnessFactor);
+        if (distance < activationDistance)
+        {
+            StartCoroutine(FadeOut(this, 0f, 2f * madnessFactor, true));
+            StartCoroutine(FadeOut(realObjectEnv, 1f, 2f * madnessFactor));
+            realObjectEnv.gameObject.SetActive(true);
+            realObjectEnv.transform.parent = null;
+            isMimicActivated = true;
+        }
+    }
+
+    private IEnumerator FadeOut(EnvironmentObject envObj, float targetAlpha, float duration, bool isDestroy=false)
+    {
+        float startAlpha = envObj.SpriteRenderer.color.a;
+        for (float elapsed = 0f; elapsed < duration; elapsed += Time.deltaTime)
+        {
+            float alpha = Mathf.Lerp(startAlpha, targetAlpha, elapsed / duration);
+            envObj.SpriteRenderer.color = GetColorWithChangedAlpha(envObj.SpriteRenderer.color, alpha);
+            yield return null;
+        }
+        envObj.SpriteRenderer.color = GetColorWithChangedAlpha(envObj.SpriteRenderer.color, targetAlpha);
+
+        if (isDestroy)
+        {
+            Destroy(envObj.gameObject);
+        }
+    }
+
+    private void FadeOutCloseAlpha(float distance)
     {
         float newAlpha = 1f;
 
@@ -43,10 +123,13 @@ public class EnvironmentObject : MonoBehaviour
         {
             newAlpha = Mathf.Lerp(fadeOutRange.y, fadeOutRange.x, (distance - fadeOutDistance.y) / fadeOutDistance.y);
         }
-
-        spriteRenderer.color = new Color(spriteRenderer.color.r,
-                                         spriteRenderer.color.g,
-                                         spriteRenderer.color.b,
-                                         newAlpha);
+        spriteRenderer.color = GetColorWithChangedAlpha(spriteRenderer.color, newAlpha);
     }
+
+    private Color GetColorWithChangedAlpha(Color oldColor, float alpha)
+    {
+        return new Color(oldColor.r, oldColor.g, oldColor.b, alpha);
+    }
+
+
 }
