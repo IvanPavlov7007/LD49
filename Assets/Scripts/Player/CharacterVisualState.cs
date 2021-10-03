@@ -4,54 +4,40 @@ using UnityEngine;
 
 public class CharacterVisualState : MonoBehaviour
 {
+    [SerializeField]
+    private PlayerController playerController;
+
     public Sprite[] states;
     private bool initalState, flipped;
     private const float fortyDegSin = 0.78539f;
-    private SpriteRenderer spriteRenderer;
-    Rigidbody rb;
 
-    void Start()
+    private void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        initalState = true;
-        flipped = true;
+        playerController.SpriteRenderer.sprite = states[0];
     }
 
     void Update()
     {
-        float curAngleRadians = getCurrentAngleRadians(rb.velocity);
-        if (Mathf.Abs(Mathf.Sin(curAngleRadians)) > fortyDegSin)
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            if (initalState)
-            {
-                initalState = false;
-                spriteRenderer.sprite = states[0];
-            }
+            // Back sprite
+            playerController.SpriteRenderer.sprite = states[0];
         }
-        else if (!initalState)
+        else if (Input.GetKeyDown(KeyCode.A))
         {
-            initalState = true;
-            spriteRenderer.sprite = states[1];
+            // Left sprite
+            playerController.SpriteRenderer.sprite = states[1];
         }
-
-        if (initalState && Mathf.Abs(curAngleRadians) > 1.58f)
+        else if (Input.GetKeyDown(KeyCode.D))
         {
-            if (!flipped)
-            {
-                flipped = true;
-                spriteRenderer.flipX = true;
-            }
+            // Right sprite
+            playerController.SpriteRenderer.sprite = states[2];
         }
-        else if (flipped)
+        else if (Input.GetKeyDown(KeyCode.S))
         {
-            flipped = false;
-            spriteRenderer.flipX = false;
+            // Front sprite
+            playerController.SpriteRenderer.sprite = states[3];
         }
     }
 
-    private float getCurrentAngleRadians(Vector3 direction)
-    {
-        return Vector3.SignedAngle(Vector3.right, direction,Vector3.up) * Mathf.PI * 0.00555f;
-    }
 }
