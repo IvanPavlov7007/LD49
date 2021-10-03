@@ -7,6 +7,16 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] float speed, runningSpeed;
 
+    [SerializeField]
+    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer SpriteRenderer
+    {
+        get
+        {
+            return spriteRenderer;
+        }
+    }
+
     // Singletone pattern
     private static PlayerController instance;
     public static PlayerController Instance { get { return instance; } }
