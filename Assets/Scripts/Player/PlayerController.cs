@@ -17,6 +17,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // In range 0,1 (0 - ok, 1 - game over)
+    [SerializeField]
+    [Range(0f, 1f)]
+    private float madnessFactor = 0f;
+    public float MadnessFactor
+    {
+        get
+        {
+            return madnessFactor;
+        }
+    }
+
     // Singletone pattern
     private static PlayerController instance;
     public static PlayerController Instance { get { return instance; } }
