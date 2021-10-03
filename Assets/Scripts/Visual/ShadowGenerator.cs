@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class ShadowGenerator : MonoBehaviour
 {
-    // Start is called before the first frame update
+    GameObject sprite;
+    public Vector3 rotation;
+    [SerializeField]
+    Material shadowMaterial;
     void Start()
     {
-        
+        sprite = GetComponentInChildren<SpriteRenderer>().gameObject;
+        var shadow = Instantiate(sprite, transform.position, Quaternion.Euler(rotation), transform);
+        shadow.GetComponent<SpriteRenderer>().material = shadowMaterial;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
