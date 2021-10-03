@@ -1686,6 +1686,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 3a866b83190142f46a4689f30cad75d2,
         type: 3}
+    - target: {fileID: 1495744959212679813, guid: e9041a1e92e75c44092e8e274d611508,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04119b5fdc181be4c85a7698d5d4296d, type: 2}
+    - target: {fileID: 1495744959212679813, guid: e9041a1e92e75c44092e8e274d611508,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4501000084838274560, guid: e9041a1e92e75c44092e8e274d611508,
         type: 3}
       propertyPath: isRotateOnlyY
