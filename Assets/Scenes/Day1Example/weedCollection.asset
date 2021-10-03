@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e17f7742ef51dad43bf4c5eeea4ffa47, type: 3}
   m_Name: weedCollection
   m_EditorClassIdentifier: 
-  sprites: []
+  sprites:
+  - {fileID: -1983389030727500463, guid: 672169959fa50094da373eb95ed3b90e, type: 3}
+  - {fileID: 860806520586188315, guid: 672169959fa50094da373eb95ed3b90e, type: 3}
+  - {fileID: 6303222815886461721, guid: 672169959fa50094da373eb95ed3b90e, type: 3}
+  - {fileID: 8400025107854013098, guid: 672169959fa50094da373eb95ed3b90e, type: 3}
+  - {fileID: -6485782466119848686, guid: 672169959fa50094da373eb95ed3b90e, type: 3}
+  - {fileID: -1579233853336935452, guid: 672169959fa50094da373eb95ed3b90e, type: 3}
+  - {fileID: -6431324891198817353, guid: 672169959fa50094da373eb95ed3b90e, type: 3}
