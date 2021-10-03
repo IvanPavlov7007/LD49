@@ -6,7 +6,7 @@ public class EnvironmentObject : MonoBehaviour
 {
     public SpriteCameraPositioning SCP;
     [SerializeField]
-    private SpriteRenderer spriteRenderer;
+    protected SpriteRenderer spriteRenderer;
     public SpriteRenderer SpriteRenderer
     {
         get
@@ -16,24 +16,24 @@ public class EnvironmentObject : MonoBehaviour
     }
 
     [SerializeField]
-    private bool isFadeOutWhenClose;
+    protected bool isFadeOutWhenClose;
     [SerializeField]
-    private Vector2 fadeOutRange; // from 1 to ~0
-    [SerializeField] 
-    private Vector2 fadeOutDistance;
+    protected Vector2 fadeOutRange; // from 1 to ~0
+    [SerializeField]
+    protected Vector2 fadeOutDistance;
 
     [SerializeField]
-    private bool isFakeObject;
+    protected bool isFakeObject;
     [SerializeField]
-    private Vector2 activationRange; // x - max dist, y - min dist (50 - 0)
+    protected Vector2 activationRange; // x - max dist, y - min dist (50 - 0)
     [SerializeField]
-    private bool isRandomPrefab;
+    protected bool isRandomPrefab;
     [SerializeField]
-    private GameObject objectPrefab;
+    protected GameObject objectPrefab;
     [SerializeField]
-    private List<GameObject> similarPrefabs;
-    private EnvironmentObject realObjectEnv;
-    private bool isMimicActivated = false;
+    protected List<GameObject> similarPrefabs;
+    protected EnvironmentObject realObjectEnv;
+    protected bool isMimicActivated = false;
     public bool IsMimicActivated 
     {
         set
@@ -43,7 +43,7 @@ public class EnvironmentObject : MonoBehaviour
     }
 
 
-    protected void Awake()
+    protected virtual void Awake()
     {
         if (isFakeObject && !isMimicActivated)
         {
@@ -61,7 +61,7 @@ public class EnvironmentObject : MonoBehaviour
         }
     }
 
-    protected void Update()
+    protected virtual void Update()
     {
         if (isFadeOutWhenClose)
         {
