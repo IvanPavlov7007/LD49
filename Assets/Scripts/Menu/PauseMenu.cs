@@ -27,18 +27,18 @@ public class PauseMenu : MonoBehaviour
     {
         GameManager.instance.gameObject.SetActive(true);
         gameObject.SetActive(false);
-        Time.timeScale = 1f;
+        GameManager.instance.ContinueGame();
     }
 
     public void QuitToMenu()
     {
-        Time.timeScale = 1f;
+        GameManager.instance.ContinueGame();
         IntersceneData.LoadNextScene("MainMenu");
     }
 
     public void Quit()
     {
-        Time.timeScale = 1f;
+        GameManager.instance.ContinueGame();
         IntersceneData.Quit();
     }
 }

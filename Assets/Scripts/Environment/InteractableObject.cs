@@ -27,7 +27,7 @@ public class InteractableObject : EnvironmentObject
     protected override void Update()
     { 
         base.Awake();
-
+        Debug.Log(SCP.DistanceToTarget);
         // Check interact, show text
         if (!isInteracted && SCP.DistanceToTarget < interactDistance)
         {

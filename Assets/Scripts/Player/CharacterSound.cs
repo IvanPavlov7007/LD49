@@ -12,10 +12,13 @@ public class CharacterSound : MonoBehaviour
 
     bool playing = false;
 
+    GameManager gm;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
+        gm = GameManager.instance;
     }
 
     void Update()
@@ -31,6 +34,11 @@ public class CharacterSound : MonoBehaviour
         else
         {
             playing = false;
+            audioSource.Stop();
+        }
+
+        if(gm.GameStopped)
+        {
             audioSource.Stop();
         }
     }
