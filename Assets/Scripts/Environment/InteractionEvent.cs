@@ -6,17 +6,17 @@ using UnityEngine.Events;
 public class InteractionEvent : MonoBehaviour
 {
     public float dist;
-    Transform player;
+    protected Transform player;
 
     [SerializeField]
-    private UnityEvent action;
+    protected UnityEvent action;
 
-    protected void Start()
+    protected virtual void Start()
     {
         player = PlayerController.Instance.transform;
     }
-    bool played = false;
-    protected void Update()
+    protected bool played = false;
+    protected virtual void Update()
     {
         if (Vector3.Distance(player.position, transform.position) < dist && !played)
         {

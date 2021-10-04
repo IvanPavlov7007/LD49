@@ -1,0 +1,479 @@
+fileFormatVersion: 2
+guid: fb0b5fa7c423bc24faf98b58c7affe85
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3432913043700355309
+    second: KURVA_0
+  - first:
+      213: -2046699264228975559
+    second: KURVA_1
+  - first:
+      213: -8796683268636366855
+    second: KURVA_2
+  - first:
+      213: 5402785466599207596
+    second: KURVA_3
+  - first:
+      213: 3631231829589228018
+    second: KURVA_4
+  - first:
+      213: -2721603106109255257
+    second: KURVA_5
+  - first:
+      213: -135114065497124570
+    second: KURVA_6
+  - first:
+      213: -7698185612463410304
+    second: KURVA_7
+  - first:
+      213: -3129955634798923168
+    second: KURVA_8
+  - first:
+      213: 447536115978167124
+    second: KURVA_9
+  - first:
+      213: -6400488249939025692
+    second: KURVA_10
+  - first:
+      213: 7966508153213662714
+    second: KURVA_11
+  - first:
+      213: 9168994385939328641
+    second: KURVA_12
+  - first:
+      213: -5479086545274740277
+    second: KURVA_0
+  - first:
+      213: -7377524998794256321
+    second: KURVA_1
+  - first:
+      213: -4105240640520798417
+    second: KURVA_2
+  - first:
+      213: -1634634151919432556
+    second: KURVA_3
+  - first:
+      213: 7901494228516069288
+    second: KURVA_4
+  - first:
+      213: -6938479569164900015
+    second: KURVA_5
+  - first:
+      213: 4979471234908321280
+    second: KURVA_6
+  - first:
+      213: 4801967235507987492
+    second: KURVA_7
+  - first:
+      213: 2012352606552030992
+    second: KURVA_8
+  - first:
+      213: -3275930791317336719
+    second: KURVA_9
+  - first:
+      213: -1721813370055948218
+    second: KURVA_10
+  - first:
+      213: -3520947934773443903
+    second: KURVA_11
+  - first:
+      213: 5856969672351637583
+    second: KURVA_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KURVA_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 935
+        width: 145
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1e64701df56f3b0800000000000000
+      internalID: -5479086545274740277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KURVA_1
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 923
+        width: 146
+        height: 342
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30ed45f914cd9990800000000000000
+      internalID: -7377524998794256321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KURVA_2
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 922
+        width: 159
+        height: 363
+      alignment: 9
+      pivot: {x: 0.54016423, y: 0.4780085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fb24053614707c0800000000000000
+      internalID: -4105240640520798417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KURVA_3
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 923
+        width: 138
+        height: 342
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cce1546ec9059e0800000000000000
+      internalID: -1634634151919432556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KURVA_4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 478
+        width: 148
+        height: 355
+      alignment: 9
+      pivot: {x: 0.4676373, y: 0.5046681}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afdf7d032fb7ad60800000000000000
+      internalID: 7901494228516069288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KURVA_5
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 479
+        width: 140
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159ee9ee79195bf90800000000000000
+      internalID: -6938479569164900015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KURVA_6
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 483
+        width: 166
+        height: 350
+      alignment: 9
+      pivot: {x: 0.52885306, y: 0.5182462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0067cfda4b2aa1540800000000000000
+      internalID: 4979471234908321280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KURVA_7
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 672
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424a48f32c304a240800000000000000
+      internalID: 4801967235507987492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KURVA_8
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 479
+        width: 148
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f7d54a8005deb10800000000000000
+      internalID: 2012352606552030992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KURVA_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 25
+        width: 211
+        height: 378
+      alignment: 9
+      pivot: {x: 0.50756645, y: 0.47859848}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d04ca4d4e8982d0800000000000000
+      internalID: -3275930791317336719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KURVA_10
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 33
+        width: 95
+        height: 351
+      alignment: 9
+      pivot: {x: 0.51680523, y: 0.4727084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6480c4cccd3ea18e0800000000000000
+      internalID: -1721813370055948218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KURVA_11
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 33
+        width: 198
+        height: 369
+      alignment: 9
+      pivot: {x: 0.4999997, y: 0.4344525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c20f231284132fc0800000000000000
+      internalID: -3520947934773443903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KURVA_12
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 32
+        width: 106
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4061cca2e2284150800000000000000
+      internalID: 5856969672351637583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

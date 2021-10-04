@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Dialog
+public class Dialog : MonoBehaviour
 {
     [SerializeField]
-    string[] lines;
-    public virtual void Start()
-    {
-        GameManager.instance.StopGame();
-    }
+    protected string[] lines;
 
     protected int index = -1;
 
-    public DialogResult next()
+    public virtual void Reset()
+    {
+        index = -1;
+    }
+
+    public virtual DialogResult next()
     {
         index++;
         if (index < lines.Length)
@@ -28,7 +28,7 @@ public class DialogResult
 {
     public readonly ResultType resultType;
     public readonly string text;
-    public enum ResultType {NextLine, Choice, End}
+    public enum ResultType {NextLine, Action, End}
 
     public DialogResult(string text)
     {

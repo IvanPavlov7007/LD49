@@ -93,6 +93,11 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 4.266667
       objectReference: {fileID: 0}
+    - target: {fileID: 1495744959212679813, guid: e9041a1e92e75c44092e8e274d611508,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5277483585643662641, guid: e9041a1e92e75c44092e8e274d611508,
         type: 3}
       propertyPath: m_Name

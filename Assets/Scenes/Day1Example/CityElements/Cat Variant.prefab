@@ -108,45 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e0398dc0b00d5743b8136ff1ad8c03d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog:
-    lines:
-    - Stangely, the first thing you recognise in this game is a <color=#ffcc00;"><b>trash
-      bag</b></color>
-    - Do you want to look inside?
-    - Sure you do
---- !u!114 &963668701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2371859147469882489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb7df70adec164843a1d4721123bebbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SCP: {fileID: 6314374010968940360}
-  spriteRenderer: {fileID: 9013424768773864397}
-  isFadeOutWhenClose: 0
-  fadeOutRange: {x: 0, y: 0}
-  fadeOutDistance: {x: 0, y: 0}
-  isFakeObject: 0
-  activationRange: {x: 0, y: 0}
-  isRandomPrefab: 0
-  objectPrefab: {fileID: 0}
-  similarPrefabs: []
-  interactDistance: 20
-  keyToInteract: 101
-  OnInteractRange:
-    m_PersistentCalls:
-      m_Calls: []
-  ExitInteractRange:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  dialog: {fileID: 0}
 --- !u!114 &963668705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,12 +202,12 @@ PrefabInstance:
     - target: {fileID: 4501000084838274560, guid: e9041a1e92e75c44092e8e274d611508,
         type: 3}
       propertyPath: maxDist
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5277483585643662641, guid: e9041a1e92e75c44092e8e274d611508,
         type: 3}
       propertyPath: m_Name
-      value: Cat
+      value: Cat Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8071048355989403182, guid: e9041a1e92e75c44092e8e274d611508,
         type: 3}
@@ -328,24 +290,6 @@ PrefabInstance:
 --- !u!1 &2371859147469882489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5277483585643662641, guid: e9041a1e92e75c44092e8e274d611508,
-    type: 3}
-  m_PrefabInstance: {fileID: 7626821848013654344}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6314374010968940360 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4501000084838274560, guid: e9041a1e92e75c44092e8e274d611508,
-    type: 3}
-  m_PrefabInstance: {fileID: 7626821848013654344}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2371859147469882489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c62bed4a2a6a6674d9a19d1e73fb9ceb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!212 &9013424768773864397 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 1495744959212679813, guid: e9041a1e92e75c44092e8e274d611508,
     type: 3}
   m_PrefabInstance: {fileID: 7626821848013654344}
   m_PrefabAsset: {fileID: 0}

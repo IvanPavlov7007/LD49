@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Inventory
   m_EditorClassIdentifier: 
   lenses: 0
-  objectsInInventory: []
+  coin: 0
+  money: 0

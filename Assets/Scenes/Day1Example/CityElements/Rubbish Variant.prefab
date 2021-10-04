@@ -31,12 +31,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e0398dc0b00d5743b8136ff1ad8c03d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog:
-    lines:
-    - Stangely, the first thing you recognise in this game is a <color=#ffcc00;"><b>trash
-      bag</b></color>
-    - Do you want to look inside?
-    - Sure you do
+  dialog: {fileID: 0}
 --- !u!114 &6128545743615712909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +125,7 @@ PrefabInstance:
     - target: {fileID: 4501000084838274560, guid: e9041a1e92e75c44092e8e274d611508,
         type: 3}
       propertyPath: maxDist
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5277483585643662641, guid: e9041a1e92e75c44092e8e274d611508,
         type: 3}

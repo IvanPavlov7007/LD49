@@ -34,11 +34,11 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Escape) || pauseMenu.activeSelf) && !GameStopped)
-        {
-            pauseMenu.SetActive(true);
-            gameObject.SetActive(false);
-        }
+        //if ((Input.GetKeyDown(KeyCode.Escape) || pauseMenu.activeSelf) && !GameStopped)
+        //{
+        //    pauseMenu.SetActive(true);
+        //    gameObject.SetActive(false);
+        //}
     }
 
 }

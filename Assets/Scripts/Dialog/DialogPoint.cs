@@ -17,4 +17,9 @@ public class DialogPoint : MonoBehaviour
     {
         DialogUI.instance.Activate(dialog);
     }
+
+    public void StartDialog(Dialog d)
+    {
+        DialogUI.instance.Activate(d);
+    }
 }
