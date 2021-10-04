@@ -6,7 +6,7 @@ public class SpriteCameraPositioning : MonoBehaviour
 {
     static new Transform camera = null;
     [SerializeField]
-    float scaleFactor,maxDist, optimalDist;
+    float scaleFactor,maxDist, offset;
     Vector3 normalScale;
     // If no rotates X and Y
     [SerializeField]
@@ -65,6 +65,6 @@ public class SpriteCameraPositioning : MonoBehaviour
         }
 
         //transform.LookAt(targetPostition);
-        transform.localScale = normalScale * Mathf.Clamp01((maxDist - distanceToTarget) / maxDist);
+        transform.localScale = normalScale * Mathf.Clamp01(Mathf.Min(maxDist,(maxDist + offset - distanceToTarget)) / maxDist);
     }
 }

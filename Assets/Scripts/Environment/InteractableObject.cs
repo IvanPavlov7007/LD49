@@ -25,15 +25,15 @@ public class InteractableObject : EnvironmentObject
     }
 
     protected override void Update()
-    {
+    { 
         base.Awake();
 
         // Check interact, show text
         if (!isInteracted && SCP.DistanceToTarget < interactDistance)
         {
-            OnInteractRange.Invoke();
+            if(OnInteractRange != null) OnInteractRange.Invoke();
 
-            if (Input.GetKey(keyToInteract))
+            if (Input.GetKey(keyToInteract) && OnInteractEvent != null)
             {
                 isInteracted = true;
                 OnInteractEvent.Invoke();
@@ -41,7 +41,7 @@ public class InteractableObject : EnvironmentObject
         }
         else
         {
-            ExitInteractRange.Invoke();
+            if (ExitInteractRange != null) ExitInteractRange.Invoke();
         }
 
     }

@@ -1,0 +1,74 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
+using Pixelplacement;
+
+
+public class CharacterSight : MonoBehaviour
+{
+    private PostProcessVolume postProcessVolume;
+    DepthOfField depth;
+
+
+    public float initialFocalLength;
+    public float focalLength;
+
+    public static CharacterSight instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    void Start()
+    {
+        postProcessVolume = Camera.main.GetComponent<PostProcessVolume>();
+        if (postProcessVolume)
+        {
+            if (!postProcessVolume.sharedProfile.TryGetSettings<DepthOfField>(out depth))
+            {
+                Debug.Log("No depth of Field");
+            }
+            focalLength = initialFocalLength;
+            depth.focalLength.value = initialFocalLength;
+        }
+        //Clarify();
+    }
+
+    void Update()
+    {
+        depth.focalLength.value = focalLength;
+    }
+
+    public void Clarify(float time)
+    {
+        StartCoroutine(clarifyForTimeAndRange(time,50f));
+    }
+
+    IEnumerator clarifyForTimeAndRange(float time, float range)
+    {
+        float elaps_time = 0f;
+        Camera c = Camera.main;
+        Tween.FieldOfView(c, c.fieldOfView + 10f, 1f,0f, AnimationCurve.EaseInOut(0f,0f,1f,1f));
+        Tween.FieldOfView(c, c.fieldOfView, 1f,1f, AnimationCurve.EaseInOut(0f, 0f, 1f, 1f));
+        float desiredFocalLength = focalLength - range;
+        float initFocalLength = focalLength;
+        focalLength = desiredFocalLength;
+
+        while (elaps_time < 1f)
+        {
+            elaps_time += Time.deltaTime;
+            focalLength = initFocalLength - elaps_time * range;
+            yield return new WaitForEndOfFrame();
+        }
+        elaps_time = 0f;
+
+        while (elaps_time < time)
+        {
+            elaps_time += Time.deltaTime;
+            focalLength = desiredFocalLength + (elaps_time / time) * range;
+            yield return new WaitForEndOfFrame();
+        }
+        focalLength = initFocalLength;
+    }
+}
