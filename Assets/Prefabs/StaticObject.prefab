@@ -78,7 +78,7 @@ SpriteRenderer:
   m_Size: {x: 0.04, y: 0.04}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &5277483585643662641
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 4501000084838274560}
   - component: {fileID: 8071048355989403182}
   m_Layer: 0
-  m_Name: Building
+  m_Name: StaticObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,8 +127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleFactor: 0
-  maxDist: 100
-  optimalDist: 10
+  maxDist: 50
+  offset: 6
   isRotateOnlyY: 0
   isLookAtPlayer: 0
 --- !u!114 &8071048355989403182
@@ -148,3 +148,8 @@ MonoBehaviour:
   isFadeOutWhenClose: 1
   fadeOutRange: {x: 5, y: 0}
   fadeOutDistance: {x: 6, y: 3}
+  isFakeObject: 0
+  activationRange: {x: 0, y: 0}
+  isRandomPrefab: 0
+  objectPrefab: {fileID: 0}
+  similarPrefabs: []

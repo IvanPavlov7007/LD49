@@ -65,6 +65,11 @@ public class SpriteCameraPositioning : MonoBehaviour
         }
 
         //transform.LookAt(targetPostition);
-        transform.localScale = normalScale * Mathf.Clamp01(Mathf.Min(maxDist,(maxDist + offset - distanceToTarget)) / maxDist);
+
+        // Version with x constrain
+        transform.localScale = CommonTools.xPlaneVector(normalScale * Mathf.Clamp01(Mathf.Min(maxDist,(maxDist + offset - distanceToTarget)) / maxDist), normalScale.x);
+
+        // Version without x constrain
+        //transform.localScale = normalScale * Mathf.Clamp01(Mathf.Min(maxDist, (maxDist + offset - distanceToTarget)) / maxDist); // Version without x constrain
     }
 }

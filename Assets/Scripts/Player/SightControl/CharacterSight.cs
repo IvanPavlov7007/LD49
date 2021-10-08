@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using Pixelplacement;
 
-
+[ExecuteAlways]
 public class CharacterSight : MonoBehaviour
 {
     private PostProcessVolume postProcessVolume;

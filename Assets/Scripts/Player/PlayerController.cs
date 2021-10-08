@@ -60,6 +60,6 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = velocity;
+        rb.velocity = CommonTools.yPlaneVector(velocity, rb.velocity.y);
     }
 }

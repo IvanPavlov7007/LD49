@@ -29,6 +29,15 @@ public static class CommonTools
         return new Vector3(vector.x, vector.y, z);
     }
 
+    public static Vector3 xPlaneVector(Vector3 vector)
+    {
+        return new Vector3(0f, vector.y, 0f);
+    }
+    public static Vector3 xPlaneVector(Vector3 vector, float x)
+    {
+        return new Vector3(x, vector.y, vector.z);
+    }
+
     public static Vector3 GetPerpendicularPointFromPointToLine(Vector3 point, Vector3 lineA, Vector3 lineB)
     {
         Vector3 AB = lineB - lineA;

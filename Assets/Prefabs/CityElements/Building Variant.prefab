@@ -11,8 +11,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12.444727, y: 2.1709585, z: 2.6351414}
-  m_Center: {x: -1.2275963, y: 0.7620435, z: -1.1764975}
+  m_Size: {x: 11.516599, y: 9.50273, z: 0.6021452}
+  m_Center: {x: -1.2264886, y: 4.4279294, z: -0.56354284}
 --- !u!1001 &5053821024689208198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94,7 +94,7 @@ PrefabInstance:
     - target: {fileID: 5277483585643662641, guid: e9041a1e92e75c44092e8e274d611508,
         type: 3}
       propertyPath: m_Name
-      value: Building
+      value: Building Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8788493647146611963, guid: e9041a1e92e75c44092e8e274d611508,
         type: 3}
