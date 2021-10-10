@@ -98,6 +98,21 @@ PrefabInstance:
       propertyPath: m_ReceiveShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4501000084838274560, guid: e9041a1e92e75c44092e8e274d611508,
+        type: 3}
+      propertyPath: constrainX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4501000084838274560, guid: e9041a1e92e75c44092e8e274d611508,
+        type: 3}
+      propertyPath: constrainZ
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4501000084838274560, guid: e9041a1e92e75c44092e8e274d611508,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5277483585643662641, guid: e9041a1e92e75c44092e8e274d611508,
         type: 3}
       propertyPath: m_Name

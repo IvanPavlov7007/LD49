@@ -316,7 +316,7 @@ SpriteRenderer:
   m_GameObject: {fileID: 1036057087376089646}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -472,6 +472,7 @@ MonoBehaviour:
   speed: 5
   runningSpeed: 7
   spriteRenderer: {fileID: 1036057087376089644}
+  madnessFactor: 0
 --- !u!54 &1036057088442647646
 Rigidbody:
   m_ObjectHideFlags: 0

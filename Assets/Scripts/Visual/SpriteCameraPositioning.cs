@@ -7,6 +7,13 @@ public class SpriteCameraPositioning : MonoBehaviour
     static new Transform camera = null;
     [SerializeField]
     float scaleFactor,maxDist, offset;
+    [SerializeField]
+    bool constrainX,constrainZ;
+
+    //for long objects like railroad
+    [SerializeField]
+    bool ignoreXDistance;
+
     Vector3 normalScale;
     // If no rotates X and Y
     [SerializeField]
@@ -53,7 +60,17 @@ public class SpriteCameraPositioning : MonoBehaviour
             targetObject = player;
         }
 
-        distanceToTarget = Vector3.Distance(transform.position, targetObject.transform.position);
+        if (ignoreXDistance)
+        {
+            Vector3 curPosition = transform.position;
+            Vector3 parallelPos = curPosition + Vector3.right * (targetObject.transform.position.x - curPosition.x);
+            distanceToTarget = Vector3.Distance(parallelPos, targetObject.transform.position);
+        }
+        else
+        {
+            distanceToTarget = Vector3.Distance(transform.position, targetObject.transform.position);
+        }
+
 
         Vector3 targetPostition = targetObject.transform.position;
 
@@ -66,10 +83,20 @@ public class SpriteCameraPositioning : MonoBehaviour
 
         //transform.LookAt(targetPostition);
 
-        // Version with x constrain
-        transform.localScale = CommonTools.xPlaneVector(normalScale * Mathf.Clamp01(Mathf.Min(maxDist,(maxDist + offset - distanceToTarget)) / maxDist), normalScale.x);
 
-        // Version without x constrain
-        //transform.localScale = normalScale * Mathf.Clamp01(Mathf.Min(maxDist, (maxDist + offset - distanceToTarget)) / maxDist); // Version without x constrain
+        if (constrainX)
+        {
+            // Version with x constrain
+            transform.localScale = CommonTools.xPlaneVector(normalScale * Mathf.Clamp01(Mathf.Min(maxDist, (maxDist + offset - distanceToTarget)) / maxDist), normalScale.x);
+        }
+        else if(constrainZ)
+        {
+            transform.localScale = CommonTools.zPlaneVector(normalScale * Mathf.Clamp01(Mathf.Min(maxDist, (maxDist + offset - distanceToTarget)) / maxDist), normalScale.z);
+        }
+        else
+        {
+            // Version without x constrain
+            transform.localScale = normalScale * Mathf.Clamp01(Mathf.Min(maxDist, (maxDist + offset - distanceToTarget)) / maxDist); // Version without x constrain
+        }
     }
 }

@@ -1,28 +1,88 @@
 fileFormatVersion: 2
-guid: 651c39529d013da46b90bc22241dfc81
+guid: 542e069d6e469234291392c0305db5e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7961463184084027955
-    second: City_0
+      213: 9085546173938197295
+    second: Forest_0
   - first:
-      213: 3382351310303610718
-    second: City_1
+      213: 1101770504183819589
+    second: Forest_1
   - first:
-      213: -5004769422184175002
-    second: City_2
+      213: -3755448495774436313
+    second: Forest_2
   - first:
-      213: 146608530966056069
-    second: City_3
+      213: -5622494010663576134
+    second: Forest_3
   - first:
-      213: 3034956270872158835
-    second: City_4
+      213: 6197192568713671372
+    second: Forest_4
   - first:
-      213: 319330399546854590
-    second: City_5
+      213: 7578449614134806614
+    second: Forest_5
   - first:
-      213: -314238633357345520
-    second: City_6
+      213: 2234022853843623893
+    second: Forest_6
+  - first:
+      213: -6065316908756177385
+    second: Forest_7
+  - first:
+      213: 6459850418655484414
+    second: Forest_8
+  - first:
+      213: 3390814489437420966
+    second: Forest_9
+  - first:
+      213: 7865762019372747835
+    second: Forest_10
+  - first:
+      213: -2462289397924853487
+    second: Forest_11
+  - first:
+      213: 2526712265115306023
+    second: Forest_12
+  - first:
+      213: 4200110476295440422
+    second: Forest_13
+  - first:
+      213: -6571977303478056107
+    second: Forest_14
+  - first:
+      213: -2158129904264184607
+    second: Forest_15
+  - first:
+      213: -176426379722696125
+    second: Forest_16
+  - first:
+      213: -8058802087160146958
+    second: Forest_17
+  - first:
+      213: -2803889121124815873
+    second: Forest_18
+  - first:
+      213: -3934943155004536591
+    second: Forest_19
+  - first:
+      213: 3502572409312661000
+    second: Forest_20
+  - first:
+      213: 8914598286130577129
+    second: Forest_21
+  - first:
+      213: 4899586422533022876
+    second: Forest_22
+  - first:
+      213: 7380007059499284829
+    second: Forest_23
+  - first:
+      213: 2289149935165105050
+    second: Forest_24
+  - first:
+      213: 1399401796718408469
+    second: Forest_0
+  - first:
+      213: -6295774252059514164
+    second: Forest_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +112,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -63,12 +123,12 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -132,148 +192,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: City_0
+      name: Forest_0
       rect:
         serializedVersion: 2
-        x: 116
-        y: 1954
-        width: 753
-        height: 55
+        x: 258
+        y: 1487
+        width: 1606
+        height: 561
       alignment: 9
-      pivot: {x: 0.0014645803, y: 0.45786798}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.041965425}
+      border: {x: 289, y: 0, z: 217, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33acda3959ccc7e60800000000000000
-      internalID: 7961463184084027955
+      spriteID: 513b17f058cab6310800000000000000
+      internalID: 1399401796718408469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: City_1
+      name: Forest_1
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 1653
-        width: 212
-        height: 383
+        x: 259
+        y: 881
+        width: 1591
+        height: 564
       alignment: 9
-      pivot: {x: 0.12836327, y: 0.022025883}
+      pivot: {x: 0.5046589, y: 0.022498164}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e574934a89680fe20800000000000000
-      internalID: 3382351310303610718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: City_2
-      rect:
-        serializedVersion: 2
-        x: 1635
-        y: 1663
-        width: 314
-        height: 385
-      alignment: 9
-      pivot: {x: 0.50700116, y: 0.024508866}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66aa9f71abc7b8ab0800000000000000
-      internalID: -5004769422184175002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: City_3
-      rect:
-        serializedVersion: 2
-        x: 122
-        y: 1680
-        width: 99
-        height: 238
-      alignment: 9
-      pivot: {x: 0.6872542, y: 0.09107061}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58c0641aeabd80200800000000000000
-      internalID: 146608530966056069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: City_4
-      rect:
-        serializedVersion: 2
-        x: 261
-        y: 1689
-        width: 33
-        height: 196
-      alignment: 9
-      pivot: {x: 0.21911898, y: -0.008379878}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 372ed2206a45e1a20800000000000000
-      internalID: 3034956270872158835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: City_5
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 774
-        width: 1416
-        height: 823
-      alignment: 9
-      pivot: {x: 0.503273, y: 0.052314173}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebc49f67e4d7e6400800000000000000
-      internalID: 319330399546854590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: City_6
-      rect:
-        serializedVersion: 2
-        x: 1288
-        y: 262
-        width: 303
-        height: 401
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01df70cb0a993abf0800000000000000
-      internalID: -314238633357345520
+      spriteID: cca21f79caae0a8a0800000000000000
+      internalID: -6295774252059514164
       vertices: []
       indices: 
       edges: []

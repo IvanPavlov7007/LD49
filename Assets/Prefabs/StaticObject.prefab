@@ -40,7 +40,7 @@ SpriteRenderer:
   m_GameObject: {fileID: 1495744959212679814}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -129,6 +129,8 @@ MonoBehaviour:
   scaleFactor: 0
   maxDist: 50
   offset: 6
+  constrainX: 1
+  constrainZ: 0
   isRotateOnlyY: 0
   isLookAtPlayer: 0
 --- !u!114 &8071048355989403182
