@@ -17,6 +17,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6002620364990575839, guid: 9f9e3002e90ad4849a46ffa1e794b7f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6149210381187784777, guid: 9f9e3002e90ad4849a46ffa1e794b7f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -75,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 7321728706976291203, guid: 9f9e3002e90ad4849a46ffa1e794b7f2,
         type: 3}
       propertyPath: m_Name
-      value: StreetLight
+      value: StreetLight Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7675159995578936156, guid: 9f9e3002e90ad4849a46ffa1e794b7f2,
         type: 3}
@@ -91,6 +96,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882190752111013471, guid: 9f9e3002e90ad4849a46ffa1e794b7f2,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f9e3002e90ad4849a46ffa1e794b7f2, type: 3}

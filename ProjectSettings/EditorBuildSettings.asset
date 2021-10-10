@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/PostLudumDare/PostLDScene 1.unity
+    guid: d0ffed7baca498841b25a1f0d90e2e19
+  - enabled: 0
     path: Assets/Scenes/Day1Example/NewWide.unity
     guid: 5566de03c3a30e04e8f15eb167cabb8d
   - enabled: 0
