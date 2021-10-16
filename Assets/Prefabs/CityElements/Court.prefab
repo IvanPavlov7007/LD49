@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &5742327464946052012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472239400362091971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89136938bfa2132488c5b5b802caf514, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1586684429339892586
 GameObject:
   m_ObjectHideFlags: 0
@@ -23,7 +11,7 @@ GameObject:
   - component: {fileID: 1348653341329962812}
   - component: {fileID: 4174347994283779838}
   - component: {fileID: 8192182971168360031}
-  - component: {fileID: 5818689206733041201}
+  - component: {fileID: 2444575594203924490}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -92,8 +80,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &5818689206733041201
-SphereCollider:
+--- !u!136 &2444575594203924490
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102,9 +90,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.49999997
+  m_Height: 5.9
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.00000059604645, z: 0}
 --- !u!1 &2806543545833766649
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,12 +838,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9041a1e92e75c44092e8e274d611508, type: 3}
---- !u!1 &472239400362091971 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5277483585643662641, guid: e9041a1e92e75c44092e8e274d611508,
-    type: 3}
-  m_PrefabInstance: {fileID: 5742327464302504178}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3911332360486591497 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8788493647146611963, guid: e9041a1e92e75c44092e8e274d611508,

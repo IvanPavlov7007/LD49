@@ -25,7 +25,7 @@ public class CharacterSound : MonoBehaviour
     {
         if (rb.velocity.magnitude > 0.5f)
         {
-            if (!playing)
+            if (!playing || !audioSource.isPlaying)
             {
                 playing = true;
                 audioSource.Play();

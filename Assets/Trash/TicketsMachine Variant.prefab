@@ -1,0 +1,271 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1335778565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1335778567}
+  - component: {fileID: 1335778566}
+  m_Layer: 0
+  m_Name: Coin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1335778567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335778565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2948926357561759190}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1335778566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335778565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc008da770ec45a43a0e7a30c9aee7b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - You insert the <b>coin</b> into the ticket machine
+  - '*Your path is <b>free</b> now.'
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: open
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &2113074279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2113074281}
+  - component: {fileID: 2113074280}
+  m_Layer: 0
+  m_Name: NoCoin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2113074281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113074279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2948926357561759190}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2113074280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113074279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc008da770ec45a43a0e7a30c9aee7b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - You encounter... a <i><b>Ticket machine</i></b>
+  - Seems like it could swallow a coin, if you had one...
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 710987533}
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &710987533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740311202397744156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bbef686d6a8e845bd5e29a1133bd82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dist: 3
+  action:
+    m_PersistentCalls:
+      m_Calls: []
+  coin: {fileID: 1335778566}
+  noCoin: {fileID: 2113074280}
+--- !u!114 &710987534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740311202397744156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0398dc0b00d5743b8136ff1ad8c03d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog: {fileID: 0}
+--- !u!1001 &6714699512015446804
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1798382322734248124, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 49ae6b0576f6f644bbe77547170794a5,
+        type: 3}
+    - target: {fileID: 1798382322734248125, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798382322734248125, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798382322734248125, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798382322734248125, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974705657520819976, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_Name
+      value: TicketsMachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485862813047862978, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 65.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485862813047862978, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485862813047862978, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 169.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485862813047862978, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485862813047862978, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485862813047862978, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485862813047862978, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485862813047862978, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485862813047862978, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485862813047862978, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485862813047862978, guid: a3c99880ef3ced649adfb2a3391b084f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a3c99880ef3ced649adfb2a3391b084f, type: 3}
+--- !u!1 &1740311202397744156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4974705657520819976, guid: a3c99880ef3ced649adfb2a3391b084f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6714699512015446804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2948926357561759190 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8485862813047862978, guid: a3c99880ef3ced649adfb2a3391b084f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6714699512015446804}
+  m_PrefabAsset: {fileID: 0}

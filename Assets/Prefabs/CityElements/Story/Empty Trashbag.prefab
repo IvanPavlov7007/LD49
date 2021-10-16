@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6169103308496448434
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: You found a trash bag!
+      objectReference: {fileID: 0}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: Having scoured the inside of the trash bag, you found nothing useful
+      objectReference: {fileID: 0}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2921447287708651647}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_sprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Sprite, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 3418327741991665123, guid: 3df90fbf346dc9342bc1acc42b0e07a8,
+        type: 3}
+    - target: {fileID: 963668705, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 963668705, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528668097, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: ...just a trash
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.962999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 33.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2371859147469882489, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_Name
+      value: Empty Trashbag
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013424768773864397, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7224771191353058156, guid: 882964e6ab3ef2744aec2211cf4ba935,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 963668705, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+--- !u!212 &2921447287708651647 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9013424768773864397, guid: 000b1af3d069e6d43876962213b31974,
+    type: 3}
+  m_PrefabInstance: {fileID: 6169103308496448434}
+  m_PrefabAsset: {fileID: 0}

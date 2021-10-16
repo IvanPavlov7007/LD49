@@ -27,4 +27,9 @@ public class InteractionEvent : MonoBehaviour
             }
         }
     }
+
+    public virtual void Reset()
+    {
+        played = false;
+    }
 }

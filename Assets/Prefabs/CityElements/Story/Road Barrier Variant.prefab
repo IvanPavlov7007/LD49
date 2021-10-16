@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945626367}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.3, y: 0, z: 0.8}
-  m_LocalScale: {x: 2.0411, y: 2.0411, z: 2.0411}
+  m_LocalPosition: {x: 7.35, y: 0, z: 0}
+  m_LocalScale: {x: 1.1808, y: 1.1808, z: 1.1808}
   m_Children: []
   m_Father: {fileID: 3054458117138998919}
   m_RootOrder: 1
@@ -107,8 +107,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108448140}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.43, y: 4.02, z: 0.8}
-  m_LocalScale: {x: 2.0411, y: 2.0411, z: 2.0411}
+  m_LocalPosition: {x: -0.11, y: 2.24, z: 0.19}
+  m_LocalScale: {x: 1.3426356, y: 1.3426356, z: 1.3426356}
   m_Children: []
   m_Father: {fileID: 3054458117138998919}
   m_RootOrder: 2
@@ -196,55 +196,80 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 146608530966056069, guid: 651c39529d013da46b90bc22241dfc81,
         type: 3}
+    - target: {fileID: 1252937338952551536, guid: ba18689fa429ed34382824ed0044292c,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1252937338952551537, guid: ba18689fa429ed34382824ed0044292c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1252937338952551537, guid: ba18689fa429ed34382824ed0044292c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.89
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252937338952551537, guid: ba18689fa429ed34382824ed0044292c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.7709093
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252937338952551537, guid: ba18689fa429ed34382824ed0044292c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.9845377
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252937338952551537, guid: ba18689fa429ed34382824ed0044292c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1808
       objectReference: {fileID: 0}
     - target: {fileID: 4863993910810460443, guid: ba18689fa429ed34382824ed0044292c,
         type: 3}
       propertyPath: m_Size.x
-      value: 19.366909
+      value: 10.882153
       objectReference: {fileID: 0}
     - target: {fileID: 4863993910810460443, guid: ba18689fa429ed34382824ed0044292c,
         type: 3}
       propertyPath: m_Center.x
-      value: 5.6950054
+      value: 5.1948414
       objectReference: {fileID: 0}
     - target: {fileID: 4863993910810460443, guid: ba18689fa429ed34382824ed0044292c,
         type: 3}
       propertyPath: m_Size.z
-      value: 3.500946
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4863993910810460443, guid: ba18689fa429ed34382824ed0044292c,
         type: 3}
       propertyPath: m_Center.z
       value: 0.6152344
       objectReference: {fileID: 0}
+    - target: {fileID: 5038287633811465987, guid: ba18689fa429ed34382824ed0044292c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5521347853485224900, guid: ba18689fa429ed34382824ed0044292c,
         type: 3}
       propertyPath: m_Name
-      value: Road Barrier
+      value: Road Barrier Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8959251382621669902, guid: ba18689fa429ed34382824ed0044292c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 34.9
+      value: -58.91
       objectReference: {fileID: 0}
     - target: {fileID: 8959251382621669902, guid: ba18689fa429ed34382824ed0044292c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.956884e-17
+      value: -17.345337
       objectReference: {fileID: 0}
     - target: {fileID: 8959251382621669902, guid: ba18689fa429ed34382824ed0044292c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 169.33
+      value: 37.842262
       objectReference: {fileID: 0}
     - target: {fileID: 8959251382621669902, guid: ba18689fa429ed34382824ed0044292c,
         type: 3}

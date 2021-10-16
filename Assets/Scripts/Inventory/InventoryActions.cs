@@ -22,6 +22,11 @@ public class InventoryActions : MonoBehaviour
         inventory.coin = false;
     }
 
+    public void AddRefrigeratorKey()
+    {
+        inventory.refrigeratorKey = true;
+    }
+
     public void AddMoney(float amount)
     {
         inventory.money += amount;

@@ -27,6 +27,8 @@ public class DimManager : TransparencyChangingComponent {
     [SerializeField]
     bool useLinear;
 
+    public bool bwMode;
+
     private Material material
     {
         get

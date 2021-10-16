@@ -1,0 +1,323 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &445984050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 445984052}
+  - component: {fileID: 445984051}
+  m_Layer: 0
+  m_Name: AfterwordOpened
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &445984052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445984050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2162898138223808134}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &445984051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445984050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc008da770ec45a43a0e7a30c9aee7b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - No coke here...
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1019152733621946359}
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 445984051}
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1855631025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1855631026}
+  - component: {fileID: 1855631027}
+  m_Layer: 0
+  m_Name: UnlockTheDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1855631026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855631025}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2162898138223808134}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1855631027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855631025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc008da770ec45a43a0e7a30c9aee7b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - You unlocked the refrigerator using the <color=#CDD27E>key</color>.
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1019152733621946359}
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1019152733357660649}
+        m_MethodName: SetDialog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 445984051}
+          m_ObjectArgumentAssemblyTypeName: Dialog, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 142a5ad93ee265842b16f56e9462e5aa,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1001 &1019152733209801525
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4529697335315362812, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.3025894
+      objectReference: {fileID: 0}
+    - target: {fileID: -4529697335315362812, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.0066337585
+      objectReference: {fileID: 0}
+    - target: {fileID: -4529697335315362812, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.8494053
+      objectReference: {fileID: 0}
+    - target: {fileID: -4529697335315362812, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 2.1147027
+      objectReference: {fileID: 0}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: It's a refrigerator that looks like a ticket machine
+      objectReference: {fileID: 0}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: Snacks for 3$, coke for 2$..
+      objectReference: {fileID: 0}
+    - target: {fileID: 699479226, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: It's <color=red> locked</color>....
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528668096, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: m_Name
+      value: AfterwordClosed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528668097, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: It's <color=red> locked</color>....
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 38.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2371859147469882489, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_Name
+      value: Refrigerator
+      objectReference: {fileID: 0}
+    - target: {fileID: 2371859147469882489, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013424768773864396, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013424768773864396, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013424768773864396, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013424768773864397, guid: 000b1af3d069e6d43876962213b31974,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b27eaccc897ae394ca4c9500aa2825f3,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 000b1af3d069e6d43876962213b31974, type: 3}
+--- !u!4 &2162898138223808134 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1162186433926643123, guid: 000b1af3d069e6d43876962213b31974,
+    type: 3}
+  m_PrefabInstance: {fileID: 1019152733209801525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1019152733621946359 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 699479234, guid: 000b1af3d069e6d43876962213b31974,
+    type: 3}
+  m_PrefabInstance: {fileID: 1019152733209801525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec79b99ce2c69a42b6ea89314250728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1019152733357660649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 963668700, guid: 000b1af3d069e6d43876962213b31974,
+    type: 3}
+  m_PrefabInstance: {fileID: 1019152733209801525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0398dc0b00d5743b8136ff1ad8c03d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

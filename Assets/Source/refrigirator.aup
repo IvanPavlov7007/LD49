@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="refrigirator_data" version="1.3.0" audacityversion="2.3.2" sel0="1.1964952381" sel1="1.8444434286" vpos="0" h="0.0000000000" zoom="271.6266556291" rate="48000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="fridge-open-shut" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="309248">
+				<waveblock start="0">
+					<pcmaliasblockfile summaryfile="e0808355.auf" aliasfile="D:\Stuff\UnityProjects\LD49\Assets\Source\fridge-open-shut.wav" aliasstart="0" aliaslen="262144" aliaschannel="0" min="-0.861614" max="0.861613" rms="0.019621"/>
+				</waveblock>
+				<waveblock start="262144">
+					<pcmaliasblockfile summaryfile="e080843c.auf" aliasfile="D:\Stuff\UnityProjects\LD49\Assets\Source\fridge-open-shut.wav" aliasstart="262144" aliaslen="47104" aliaschannel="0" min="-0.002668" max="0.002365" rms="0.000557"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

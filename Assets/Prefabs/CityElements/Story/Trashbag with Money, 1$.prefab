@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8490236543522714964
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5025424140990387713, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.102924
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025424140990387713, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.550509
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025424140990387713, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 43.107105
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025424140990387713, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025424140990387713, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025424140990387713, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025424140990387713, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025424140990387713, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025424140990387713, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025424140990387713, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025424140990387713, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: lines.Array.data[1]
+      value: You found <b>1$</b> inside
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: AddMoney
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_FloatArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 6726251333416985899}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: set_sprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Sprite, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169103309143482120, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 3418327741991665123, guid: 3df90fbf346dc9342bc1acc42b0e07a8,
+        type: 3}
+    - target: {fileID: 6169103309451015283, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: lines.Array.data[0]
+      value: I wonder who throws their money away?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8464383102505594827, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+        type: 3}
+      propertyPath: m_Name
+      value: Trashbag with Money, 1$
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c98f09c60ad5e2408f10e08471a9d06, type: 3}
+--- !u!212 &6726251333416985899 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2921447287708651647, guid: 6c98f09c60ad5e2408f10e08471a9d06,
+    type: 3}
+  m_PrefabInstance: {fileID: 8490236543522714964}
+  m_PrefabAsset: {fileID: 0}
