@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lenses: 0
   coin: 0
-  money: 14
+  money: 0
   refrigeratorKey: 1
