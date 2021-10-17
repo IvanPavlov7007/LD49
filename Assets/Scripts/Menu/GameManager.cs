@@ -15,13 +15,15 @@ public class GameManager : MonoBehaviour
     public void ContinueGame()
     {
         GameStopped = false;
-        Time.timeScale = 1f;
+        PlayerController.Instance.enabled = true;
+        //Time.timeScale = 1f;
     }
 
     public void StopGame()
     {
         GameStopped = true;
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
+        PlayerController.Instance.enabled = false;
     }
 
     void Awake()

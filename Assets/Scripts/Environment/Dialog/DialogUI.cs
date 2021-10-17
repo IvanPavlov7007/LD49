@@ -34,6 +34,7 @@ public class DialogUI : MonoBehaviour
         currentDialog = d;
         GameManager.instance.StopGame();
         skipFrame = true;
+        MusicManager.instance.DampenMusic();
         next();
     }
 
@@ -63,6 +64,7 @@ public class DialogUI : MonoBehaviour
             dislpayedText.text = string.Empty;
             GameManager.instance.ContinueGame();
             currentDialog = null;
+            MusicManager.instance.RestoreNormalVolime();
         }
 
         audioSource.PlayOneShot(clickSound);

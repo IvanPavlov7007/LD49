@@ -47,9 +47,27 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void boostSpeed(float multiplier)
+    {
+        speed *= multiplier;
+        runningSpeed *= multiplier;
+    }
+
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+    }
+
+    private void OnEnable()
+    {
+        Start();
+        rb.isKinematic = false;
+    }
+
+    private void OnDisable()
+    {
+        Start();
+        rb.isKinematic = true;
     }
 
     void Update()

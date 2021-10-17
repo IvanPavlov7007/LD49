@@ -5,7 +5,7 @@ using Pixelplacement;
 
 public class MusicManager : MonoBehaviour
 {
-    public MusicManager instance { get; private set; }
+    public static MusicManager instance { get; private set; }
     AudioSource audioSource;
     [SerializeField]
     AudioClip track;
@@ -24,7 +24,7 @@ public class MusicManager : MonoBehaviour
     public void StartMusic(float time)
     {
         audioSource.volume = 0f;
-        Tween.Volume(audioSource, normalVolume, time, 0f, Tween.EaseLinear);
+        Tween.Volume(audioSource, normalVolume, time, 0f, Tween.EaseLinear, obeyTimescale: false);
         audioSource.Play();
     }
 
@@ -35,12 +35,12 @@ public class MusicManager : MonoBehaviour
 
     public void DampenMusic()
     {
-        Tween.Volume(audioSource, dampenMusicVolume, 0.5f, 0f, Tween.EaseLinear);
+        Tween.Volume(audioSource, dampenMusicVolume, 0.5f, 0f, Tween.EaseLinear,obeyTimescale: false);
     }
 
     public void RestoreNormalVolime()
     {
-        Tween.Volume(audioSource, normalVolume, 0.5f, 0f, Tween.EaseLinear);
+        Tween.Volume(audioSource, normalVolume, 0.5f, 0f, Tween.EaseLinear, obeyTimescale: false);
     }
 
 }
