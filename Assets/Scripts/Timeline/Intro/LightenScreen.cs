@@ -42,6 +42,7 @@ public class LightenScreen : MonoBehaviour, SequenceEvent
 
     public void SetFullDimmed()
     {
+        Start();
         dim.Visibility = 0f;
     }
 

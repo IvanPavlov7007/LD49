@@ -5,17 +5,21 @@ using UnityEngine;
 public class DisableMovement : MonoBehaviour
 {
     PlayerController controller;
-    
+    Rigidbody rb;
+
+
 
     private void OnEnable()
     {
-        PlayerController.Instance.enabled = false;
-        PlayerController.Instance.GetComponent<CharacterSound>().enabled = false;
+        controller = PlayerController.Instance;
+        controller.enabled = false;
+        rb = controller.GetComponent<Rigidbody>();
+        rb.isKinematic = true;
     }
 
     private void OnDisable()
     {
-        PlayerController.Instance.enabled = true;
-        PlayerController.Instance.GetComponent<CharacterSound>().enabled = true;
+        controller.enabled = true;
+        rb.isKinematic = false;
     }
 }
